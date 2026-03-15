@@ -48,8 +48,4 @@ Users should be able to:
 - Website - [Nojoud Codes](https://nojoudcodes.vercel.app/)
 - Frontend Mentor - [@NojoudCodes](https://www.frontendmentor.io/profile/NojoudCodes)
 - Twitter - [@CodesNojoud](https://x.com/CodesNojoud)
-
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
