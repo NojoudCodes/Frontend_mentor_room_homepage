@@ -1,0 +1,92 @@
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto;
+    height: auto;
+  }
+
+  /* ─── Hero ─── */
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero .hero-left {
+    height: 45vh;
+    padding: 1.5rem;
+    background-image: url('../images/mobile-image-hero-1.jpg');
+  }
+
+  /* ─── Nav ─── */
+  .hero nav {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* show hamburger, hide desktop links */
+  .hero nav .hamburger {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .hero .desktop-links {
+    display: none;
+  }
+
+  /* center the logo absolutely between hamburger and edge */
+  .hero nav .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* ─── Slide buttons ─── */
+  .hero-right {
+    position: relative;
+    padding: 2.5rem 2rem 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .hero-right .buttons {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    transform: translateY(-100%);
+  }
+
+  .buttons .left-icon,
+  .buttons .right-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-right h1 {
+    font-size: 2rem;
+  }
+
+  /* ─── Main ─── */
+  main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  main img {
+    height: 45vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .about {
+    padding: 3rem 2rem;
+  }
+
+  .about h2 {
+    margin-bottom: 1rem;
+  }
+}

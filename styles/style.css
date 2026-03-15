@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(0, 0%, 63%);
+  --grey-800: hsl(0, 0%, 27%);
+  --black: hsl(0, 0%, 0%);
+}
+
+body {
+  font: 400 1rem "League Spartan", sans-serif;
+  line-height: 1.4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  line-height: 1;
+}
+
+/* ─── Mobile nav overlay & bar ─── */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+.nav-bar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  align-items: center;
+  gap: 2rem;
+  padding: 1.8rem 2rem;
+  z-index: 100;
+}
+
+.nav-bar.active {
+  display: flex;
+}
+
+.nav-bar .close-btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .mobile-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-bar .mobile-links a {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ─── Hero ─── */
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 70%;
+}
+
+.hero .hero-left {
+  padding: 2rem;
+  background: linear-gradient(rgba(0,0,0,0.02), rgba(0,0,0,0.03)), url('../images/desktop-image-hero-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-position: no-repeat;
+}
+
+/* ─── Nav (desktop) ─── */
+.hero nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero nav .hamburger {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.hero nav .logo {
+  display: block;
+}
+
+.hero .desktop-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero .desktop-links a {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+/* ─── Hero right ─── */
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.hero-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-right p {
+  font-size: 0.875rem;
+  color: var(--grey-500);
+  margin-bottom: 1rem;
+}
+
+.hero-right .shop-now {
+  background-color: transparent;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-right .buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.buttons .left-icon,
+.buttons .right-icon {
+  background-color: var(--black);
+  border: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Main ─── */
+main {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  height: 40%;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.about p {
+  font-size: 0.938rem;
+  color: var(--grey-500);
+}
